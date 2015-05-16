@@ -1,0 +1,35 @@
+<template name="contactDetail">
+	<div class="contact_details">
+		<a href="/" style="text-decoration:underline;"> &lt; Retour</a>
+		<br>
+		<br>
+		<div class="panel panel-info">
+			<div class="panel-heading">
+				<div class="panel-title ">{{name}}
+					<div style="float:right">
+						<a href="{{ pathFor 'contactEdit' }}">
+		  				<span class=" glyphicon glyphicon-edit">
+		  				</span>
+		  				</a>
+					</div>
+				</div>			
+			</div>
+			<div class="panel-body">
+				<div >Tél: <span class="badge">{{telephone}}</span></div>
+				<br>
+				<div>
+					<a href="mailto:{{email}}" class="btn btn-primary" type="button">
+					  Email: <span class="badge">{{email}}</span>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<br>
+	<nav>
+		<ul class="pager">
+			<li><a class="previous" href="#">Previous</a></li>
+			<li><a class="next" href="#">Next</a></li>
+		</ul>
+	</nav>
+</template>

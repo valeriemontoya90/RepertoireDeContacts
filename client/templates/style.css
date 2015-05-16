@@ -1,0 +1,27 @@
+/* CSS declarations go here */
+body {
+	margin: 0;
+	padding: 0% 10%;
+	padding-top: 80px; 
+}
+
+#login-dropdown-list{
+	position:fixed;
+	//margin:auto!important;
+	left:auto;
+	top:10px!important;
+	right:10px!important;
+}
+
+.contact {
+	color: black!important;
+}
+
+.contact:hover{
+	color: #317BB9!important;
+	background-color:  #D9EDF7!important;;
+}
+
+.contact .delete{
+	float:right;
+}

@@ -1,0 +1,22 @@
+<template name="contacts">
+	{{#if currentUser}}
+		{{> searchBar }}
+		{{#if isDirectoryEmpty}}
+			<div><a href="{{ pathFor 'contactCreate' }}">Ajouter un contact</a></div>
+		{{else}}
+		<div class="panel panel-info">
+			<div class="list-group">
+				{{#if contacts.count}}
+					{{#each contacts }}
+						{{> contact }}
+					{{/each }}
+				{{else}}
+					<span class="contact list-group-item">Pas de résultats</span>
+				{{/if}}
+			</div>
+		</div>
+		{{/if}}
+	{{else}}
+		Veuillez vous connecter pour accéder à vos contacts ou créer un compte
+	{{/if}}
+</template>
