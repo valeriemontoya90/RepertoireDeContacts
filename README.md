@@ -12,7 +12,7 @@ La liste des dépendances est la suivante :
 <li>mrt:bootstrap-3</li>
 
 <img src="images/Screenshot01.png">
-<img src="images/Screenshot02.png">
+<img src="client/public/images/Screenshot02.png">
 <img src="images/Screenshot03.png">
 <img src="images/Screenshot04.png">
 <img src="images/Screenshot05.png">
